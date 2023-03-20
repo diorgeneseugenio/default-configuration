@@ -14,12 +14,18 @@
 	editor = code
 [alias]
 	s = status -s
-	c = !git add -A && git commit
+	c = !git add -A && git commit -m
 	l = log --all --graph --decorate --oneline --abbrev-commit
 	remotes = remote -v
+	p = pull
+	ps = push
+	st = stash
+	stp = stash pop
+[push]
+	autoSetupRemote = true
 ```
 
 ### Comandos extras
 
 - Abrir arquivo de configuração on editor
-    - git config --global -e
+  - git config --global -e
